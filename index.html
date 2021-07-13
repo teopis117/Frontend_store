@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front Store</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<!-- una buena practica es que el logotipo te lleva a la pagina home del sitio -->
+<body>
+<header class="header">
+<a href="index.html">
+    <!-- alt nos sirve como para describir la pagina y ayuda en el posicionamiento web -->
+    <img  class="header__logo" src="img/logo.png" alt="logotipo de la pagina">
+</a>
+
+
+</header>
+<!-- BEM es una metodologia para crear codigo reutilizable y ordenado en los proyectos de css 
+
+    Bloques: solo dependen de si mismos
+
+elementos: dependen del bloque y utilizan el nombre de el bloque y despues doble guion     "cliente__nombre"
+
+Modificadores: nos sirve para poder mostrar que un elemento tendra un estilo diferente   "cliente__nombre--ceo"
+
+-->
+<nav class="navegacion">
+    <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
+    <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+</nav>
+
+<main class="contenedor">
+<h1>Nuestros Productos</h1>
+<div class="grid">
+    <div class="producto">
+        <a href="producto.html">
+            <img src="img/1.jpg" class="producto__imagen" alt="imagen de camisa">
+            <div class="producto__informacion">
+                <p class="producto__nombre">Vuejs</p>
+                <p class="producto__precio">$25</p>
+            </div>
+        </a>
+    </div>
+    <div class="producto">
+        <a href="producto.html">
+            <img src="img/2.jpg" class="producto__imagen" alt="imagen de camisa">
+            <div class="producto__informacion">
+                <p class="producto__nombre">Angular</p>
+                <p class="producto__precio">$25</p>
+            </div>
+        </a>
+    </div>
+    <div class="producto">
+        <a href="producto.html">
+            <img src="img/3.jpg" class="producto__imagen" alt="imagen de camisa">
+            <div class="producto__informacion">
+                <p class="producto__nombre">React</p>
+                <p class="producto__precio">$25</p>
+            </div>
+        </a>
+    </div>
+    <div class="producto">
+        <a href="producto.html">
+            <img src="img/4.jpg" class="producto__imagen" alt="imagen de camisa">
+            <div class="producto__informacion">
+                <p class="producto__nombre">Redux</p>
+                <p class="producto__precio">$25</p>
+            </div>
+        </a>
+    </div>
+    <div class="producto">
+        <a href="producto.html">
+            <img src="img/5.jpg" class="producto__imagen" alt="imagen de camisa">
+            <div class="producto__informacion">
+                <p class="producto__nombre">Nodejs</p>
+                <p class="producto__precio">$25</p>
+            </div>
+        </a>
+    </div>
+    <div class="producto">
+        <a href="producto.html">
+            <img src="img/6.jpg" class="producto__imagen" alt="imagen de camisa">
+            <div class="producto__informacion">
+                <p class="producto__nombre">Sass</p>
+                <p class="producto__precio">$25</p>
+            </div>
+        </a>
+    </div>
+    <div class="producto">
+        <a href="producto.html">
+            <img src="img/7.jpg" class="producto__imagen" alt="imagen de camisa">
+            <div class="producto__informacion">
+                <p class="producto__nombre">html5</p>
+                <p class="producto__precio">$25</p>
+            </div>
+        </a>
+    </div>
+    <div class="producto">
+        <a href="producto.html">
+            <img src="img/8.jpg" class="producto__imagen" alt="imagen de camisa">
+            <div class="producto__informacion">
+                <p class="producto__nombre">Github</p>
+                <p class="producto__precio">$25</p>
+            </div>
+        </a>
+    </div>
+    <div class="producto">
+        <a href="producto.html">
+            <img src="img/9.jpg" class="producto__imagen" alt="imagen de camisa">
+            <div class="producto__informacion">
+                <p class="producto__nombre">Bulma</p>
+                <p class="producto__precio">$25</p>
+            </div>
+        </a>
+    </div>
+    <div class="producto">
+        <a href="producto.html">
+            <img src="img/10.jpg" class="producto__imagen" alt="imagen de camisa">
+            <div class="producto__informacion">
+                <p class="producto__nombre">Typescript</p>
+                <p class="producto__precio">$25</p>
+            </div>
+        </a>
+    </div>
+    <div class="producto">
+        <a href="producto.html">
+            <img src="img/11.jpg" class="producto__imagen" alt="imagen de camisa">
+            <div class="producto__informacion">
+                <p class="producto__nombre">Drupal</p>
+                <p class="producto__precio">$25</p>
+            </div>
+        </a>
+    </div>
+    <div class="producto">
+        <a href="producto.html">
+            <img src="img/12.jpg" class="producto__imagen" alt="imagen de camisa">
+            <div class="producto__informacion">
+                <p class="producto__nombre">Javascript</p>
+                <p class="producto__precio">$25</p>
+            </div>
+        </a>
+    </div>
+    <div class="producto">
+        <a href="producto.html">
+            <img src="img/13.jpg" class="producto__imagen" alt="imagen de camisa">
+            <div class="producto__informacion">
+                <p class="producto__nombre">Grapgql</p>
+                <p class="producto__precio">$25</p>
+            </div>
+        </a>
+    </div>
+    <div class="producto">
+        <a href="producto.html">
+            <img src="img/14.jpg" class="producto__imagen" alt="imagen de camisa">
+            <div class="producto__informacion">
+                <p class="producto__nombre">Wordpress</p>
+                <p class="producto__precio">$15</p>
+            </div>
+        </a>
+    </div>
+    <!-- termina los productos -->
+    <div class="grafico grafico--camisa">
+
+    </div>
+    <div class="grafico grafico--node">
+
+    </div>
+</div>
+</main>
+</body>
+<footer class="footer">
+    <p class="footer__texto">Front End Store- Todos los Derechos reservados 2021</p>
+</footer>
+</html>

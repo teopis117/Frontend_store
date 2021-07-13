@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front Store</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<!-- una buena practica es que el logotipo te lleva a la pagina home del sitio -->
+<body>
+<header class="header">
+<a href="index.html">
+    <!-- alt nos sirve como para describir la pagina y ayuda en el posicionamiento web -->
+    <img  class="header__logo" src="img/logo.png" alt="logotipo de la pagina">
+</a>
+
+
+</header>
+<!-- BEM es una metodologia para crear codigo reutilizable y ordenado en los proyectos de css 
+
+    Bloques: solo dependen de si mismos
+
+elementos: dependen del bloque y utilizan el nombre de el bloque y despues doble guion     "cliente__nombre"
+
+Modificadores: nos sirve para poder mostrar que un elemento tendra un estilo diferente   "cliente__nombre--ceo"
+
+-->
+<nav class="navegacion">
+    <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
+    <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+</nav>
+
+<main class="contenedor">
+<h1>React JS</h1>
+<div class="camisa">
+    <img src="img/3.jpg" alt="imagen de camisa del producto" class="camisa__imagen">
+    <div class="camisa__contenido">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora omnis commodi fugit! Debitis, illum nobis suscipit rem delectus ipsa sit nemo distinctio, eveniet nisi soluta quae quisquam dignissimos, minima deserunt.</p>
+        <!-- los form nos permiten introducir formularios para nuestras paginas -->
+        <form action="" class="formulario">
+            <!-- con select hacemos la pregunta de que escogan de alguna de las opciones -->
+            <select  class="formulario__campo">
+                <!-- y con opcion les damos lo que pueden escoger -->
+                <option value="" disabled selected>----Seleccionar talla---</option>
+                <option value="chica">chica</option>
+                <option value="mediana">mediana</option>
+                <option value="grande">grande</option>
+            </select>
+            <!-- con el atributo min y max podemos escoger los limites 
+            
+            con step podemos escoger los parametros para los saltos-->
+            <input class="formulario__campo" type="number" name="" id="" placeholder="cantidad" min="1">
+            <input class="formulario__submit" type="submit" value="Agregar al Carrito">
+        </form>
+    </div>
+</div>
+</main>
+</body>
+<footer class="footer">
+    <p class="footer__texto">Front End Store- Todos los Derechos reservados 2021</p>
+</footer>
+</html>
